@@ -48,7 +48,7 @@ we might want to add a 'report user' option, but i'm not
 too sure how this will work. if anyone has any
 ideas, feel free to make a pull request and add it to this readme :)
 
-also
+aw shit
 ----
 
 **June 16, 2014, 11:10 PST:** sorry, i screwed up the commit messages
