@@ -51,12 +51,15 @@ ideas, feel free to make a pull request and add it to this readme :)
 testing
 -------
 
-1. `clone` repo
-2. `cd` into repo
+right now this probably won't work because
+the number isn't paid :/
+
+1. `git clone https://github.com/trommel/textymous`
+2. `cd textymous`
 3. `rails s`
-4. `$ curl -X POST http://localhost:3000/twilio/voice -d 'foo=bar'`
-5. see if it returns TwiML
-6. if it does, cool
+4. `brew install ngrok`
+5. call +1 (778) 654-1046
+6. if your phone starts playing a remix of the star wars mos eisley cantina song, you're set
 7. ???
 8. profit
 
