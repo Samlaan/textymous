@@ -57,10 +57,18 @@ the number isn't paid :/
 if you want me to verify your number (for testing purposes, obviously),
 [DM me on Twitter](https://twitter.com/nulljosh)
 
+first, install some necissitiiestieisies
+
+```bash
+$ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+```
+and then
+
 ```bash
 $ git clone https://github.com/trommel/textymous
 $ cd textymous
 $ gem install rails # if you don't already have it
+$ brew update; brew upgrade
 $ brew install ngrok # if you don't already have it
 $ rails s
 * start a new tab or something*
