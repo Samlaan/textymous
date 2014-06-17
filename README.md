@@ -57,14 +57,19 @@ the number isn't paid :/
 if you want me to verify your number (for testing purposes, obviously),
 [DM me on Twitter](https://twitter.com/nulljosh)
 
-1. `git clone https://github.com/trommel/textymous`
-2. `cd textymous`
-3. `rails s`
-4. `brew install ngrok`
-5. call +1 (778) 654-1046
-6. if your phone starts playing a remix of the star wars mos eisley cantina song, you're set
-7. ???
-8. profit
+```bash
+$ git clone https://github.com/trommel/textymous
+$ cd textymous
+$ gem install rails # if you don't already have it
+$ brew install ngrok # if you don't already have it
+$ rails s
+* start a new tab or something*
+$ ngrok 3000
+```
+1. call +1 (778) 654-1046
+2. if your phone starts playing a remix of the star wars mos eisley cantina song, you're set
+3. ???
+4. profit
 
 
 contributing
