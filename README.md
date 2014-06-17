@@ -54,6 +54,9 @@ testing
 right now this probably won't work because
 the number isn't paid :/
 
+if you want me to verify your number (for testing purposes, obviously),
+[DM me on Twitter](https://twitter.com/nulljosh)
+
 1. `git clone https://github.com/trommel/textymous`
 2. `cd textymous`
 3. `rails s`
@@ -70,6 +73,27 @@ contributing
 <u>***pull requests pull requests pull requests pull requests pull requests
 pull requests pull requests pull requests pull requests pull requests
 pull requests pull requests pull requests***</u>
+
+things i should apparently cover, according to rails
+----------------------------------------------------
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
 
 aw shit
 ----
