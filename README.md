@@ -51,4 +51,5 @@ ideas, feel free to make a pull request and add it to this readme :)
 also
 ----
 
-**June 16, 2014, 11:10 PST:** sorry, i screwed up the commit messages so i just scrapped them and started over.
+**June 16, 2014, 11:10 PST:** sorry, i screwed up the commit messages
+so i just scrapped them and started over. everything just says "Initial Commit now".
