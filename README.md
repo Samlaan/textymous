@@ -52,4 +52,4 @@ also
 ----
 
 **June 16, 2014, 11:10 PST:** sorry, i screwed up the commit messages
-so i just scrapped them and started over. everything just says "Initial Commit now".
+so i just scrapped them and started over. everything just says "Initial Commit" now.
