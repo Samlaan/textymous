@@ -48,6 +48,26 @@ we might want to add a 'report user' option, but i'm not
 too sure how this will work. if anyone has any
 ideas, feel free to make a pull request and add it to this readme :)
 
+testing
+-------
+
+1. `clone` repo
+2. `cd` into repo
+3. `rails s`
+4. `$ curl -X POST http://localhost:3000/twilio/voice -d 'foo=bar'`
+5. see if it returns TwiML
+6. if it does, cool
+7. ???
+8. profit
+
+
+contributing
+------------
+
+<u>***pull requests pull requests pull requests pull requests pull requests
+pull requests pull requests pull requests pull requests pull requests
+pull requests pull requests pull requests***</u>
+
 aw shit
 ----
 
