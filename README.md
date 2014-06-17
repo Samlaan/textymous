@@ -76,7 +76,7 @@ $ rails s
 $ ngrok 3000
 ```
 1. call +1 (778) 654-1046
-2. if your phone starts playing a remix of the star wars mos eisley cantina song, you're set
+2. if your phone starts playing a remix of the [star wars mos eisley cantina song](https://www.youtube.com/watch?v=9Ukis3Bwz_k), you're set
 3. ???
 4. profit
 
