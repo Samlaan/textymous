@@ -67,9 +67,10 @@ and then
 ```bash
 $ git clone https://github.com/trommel/textymous
 $ cd textymous
-$ gem install rails # if you don't already have it
+$ [sudo] gem install bundler rails # if you don't already have it
 $ brew update; brew upgrade
 $ brew install ngrok # if you don't already have it
+$ bundle install
 $ rails s
 * start a new tab or something*
 $ ngrok 3000
