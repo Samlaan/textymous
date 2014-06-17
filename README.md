@@ -75,10 +75,9 @@ $ rails s
 * start a new tab or something*
 $ ngrok 3000
 ```
-1. call +1 (778) 654-1046
-2. if your phone starts playing music, you're set
-3. ???
-4. profit
+1. call/text +1 (778) 654-1046
+2. ???
+3. profit
 
 
 contributing
