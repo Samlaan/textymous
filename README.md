@@ -21,9 +21,14 @@ i.e.:
 this will then be parsed, and the body will be texted or called to the given number.
 
 the given user / number can now reply through the twilio number,
-which will be handled with [TwiML](https://www.twilio.com/docs/api/twiml)
 
 i.e.:
+
+```
+What the heck man, who are you?
+```
+
+which will be read and parsed with / into [TwiML](https://www.twilio.com/docs/api/twiml)
 
 ```html
 <Response>
