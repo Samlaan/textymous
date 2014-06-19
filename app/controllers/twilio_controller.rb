@@ -10,7 +10,7 @@ class TwilioController < ApplicationController
   def voice
     response = Twilio::TwiML::Response.new do |r|
       # r.Sms 'Thanks for calling :D'
-      r.Play 'https://github.com/trommel/trommel.github.io/raw/master/random/phantoms-cant-dance.wav',
+      r.Play 'https://raw.githubusercontent.com/trommel/trommel.github.io/master/random/never-gonna-give-you-up.mp3',
         :loop => 0
     end
 
