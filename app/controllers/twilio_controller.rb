@@ -12,6 +12,9 @@ class TwilioController < ApplicationController
       # r.Sms 'Thanks for calling :D'
       r.Play 'https://raw.githubusercontent.com/trommel/trommel.github.io/master/random/never-gonna-give-you-up.mp3',
         :loop => 0
+      5.times do
+        r.Sms "we're no strangers to love"
+      end
     end
 
   def messaging
