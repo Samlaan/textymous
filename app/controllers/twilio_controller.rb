@@ -12,7 +12,7 @@ class TwilioController < ApplicationController
     response = Twilio::TwiML::Response.new do |r|
       from = params[:From]
       body = params[:Body]
-      yaml = YAML.load(body)
+      yaml = YAML.load("---\n#{body}\n---")
       r.Sms yaml['body'], :to => yaml['to']
     end
 
