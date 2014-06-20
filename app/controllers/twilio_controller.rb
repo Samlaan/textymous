@@ -1,4 +1,5 @@
 require 'twilio-ruby'
+require 'yaml'
 
 class TwilioController < ApplicationController
   include Webhookable
@@ -7,18 +8,16 @@ class TwilioController < ApplicationController
 
   skip_before_action :verify_authenticity_token
 
-  def voice
-    response = Twilio::TwiML::Response.new do |r|
-      # r.Sms 'Thanks for calling :D'
-      r.Play 'https://raw.githubusercontent.com/trommel/trommel.github.io/master/random/never-gonna-give-you-up.mp3',
-        :loop => 0
-      5.times do
-        r.Sms "we're no strangers to love"
-      end
-    end
-
   def messaging
-  end
+    response = Twilio::TwiML::Response.new do |r|
+      from = params[:From]
+      body = params[:Body]
+      yaml = YAML.load(body)
+      ['-', '(', ')'].each do |i|
+        to = yaml['to'].gsub(i, '')
+      end
+      r.Sms yaml['body'], :to => to
+    end
 
     render_twiml response
   end

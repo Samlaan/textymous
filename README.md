@@ -7,18 +7,20 @@ anonymous texting, for whatever reason
 the idea
 -----
 
-using the [twilio ruby gem](https://github.com/twilio/twilio-ruby) and API, make an app/script that allows a user to text a twilio number with 2 pieces of information (probably in JSON); a "to" and "body".
+using the [twilio ruby gem](https://github.com/twilio/twilio-ruby) and API,
+make an app/script that allows a user to text a twilio number with 2 pieces of
+information (probably in ~~JSON~~ YAML); a "to" and "body".
 
 i.e.:
 
-```json
-{
- "to": "+17788766549",
-  "body": "Hey dude, I'm behing you"
-}
+```yaml
+---
+to: +1(778)-876-3589
+body: "Hey dude, I'm behing you"
+---
 ```
 
-this will then be parsed, and the body will be texted or called to the given number.
+this will then be parsed, and the body will be texted to the given number.
 
 the given user / number can now reply through the twilio number,
 
@@ -28,16 +30,7 @@ i.e.:
 What the heck man, who are you?
 ```
 
-which will be read and parsed with / into [TwiML](https://www.twilio.com/docs/api/twiml)
-
-```html
-<Response>
-    <Sms>What the heck man, who are you?</Sms>
-</Response>
-```
-
-the response will then be parsed into text and texted
-back to the original texter
+the response will then be sent to the original texter
 
 the objective of this process is to keep the initial "texter"'s number anonymous while still being able to text with relative ease.
 
@@ -62,27 +55,26 @@ the number isn't paid :/
 if you want me to verify your number (for testing purposes, obviously),
 [DM me on Twitter](https://twitter.com/nulljosh)
 
-first, install some necissitiiestieisies
-
-```bash
-$ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-```
-and then
-
 ```bash
 $ git clone https://github.com/trommel/textymous
 $ cd textymous
+$ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)" # if you don't already have it
+$ brew update; brew upgrade; gem update
 $ [sudo] gem install bundler rails # if you don't already have it
-$ brew update; brew upgrade
 $ brew install ngrok # if you don't already have it
 $ bundle install
 $ rails s
 * start a new tab or something*
 $ ngrok 3000
 ```
-1. call/text +1 (778) 654-1046
-2. ???
-3. profit
+now text +1 (778) 654-1046 in YAML with two pieces of information
+
+```yaml
+---
+to: +1(778)-820-4128
+body: "Hey dude"
+---
+```
 
 
 contributing
