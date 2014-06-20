@@ -3,13 +3,13 @@
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAABAgAGBQJToPKBAAoJEEtwXX0bMP+T648H/1lM3kTFBzM2V0NtR/1vc0i6
-CHJ6IeVaAJADarwzfkaziC4bp1Y3LGdXnyZxsnv5zqlhlx/2eFsdOMC2zFODUk9i
-fa8mV+sgru3GaPhN5o+NrchnJNkOmkdj9YwdYGynww24v/rAkfEYpImxQIgFp2Hj
-wFBGv823e1igLjf+o3YxE7HCEmC77J+IJzarAR6RXw9jAcPfRggtkxooNChJGJkw
-sqpC09+VAyu4Sf8mhVqiWq2Nj+Bjsb4h4Vczt8rLGw1ftvmloOExvtRbfTbgVUOI
-1yVK1Ndbxh3BDst3OOYD15heEhuSrwGm2qBpX4b+H2Wc7u+haCaaqUevcxMh2SM=
-=T7s2
+iQEcBAABAgAGBQJTo+NKAAoJEEtwXX0bMP+TdmUH/3Sr06WEwxyoLgO3kqfC7yBP
+yr/9VvnfUHucdWAlwKer8zpSW7v2g2AzqBg+ehJQfpfOndMhqINri3s+Du6TlYQb
+wvbUp53K5oa8IeuoknchmX9FmIc7FX3seuRgGyxQSflPHOhZ8Nw1Fp79oqybGQ97
++md1xT+w/Drb88Or8DKTIFLDjc6xy0arwH3j4SvRd+g5hCkPUnrh2VIBNl4UfykH
+MFjUNMNrjspN5D0qmVcO3nkyjdNV6sUb0n4mJ9pFKy7maxlp1nWSAuFfLUdO2O0x
+FCTQ//6X1ZuDrzE1sCiGA52Zse/JWisGhHuk8CDKvclFJqc1BmAkg/zkcylDdD4=
+=DadD
 -----END PGP SIGNATURE-----
 
 ```
@@ -26,7 +26,7 @@ size  exec  file                               contents
 466           .gitignore                       e1504e90a140f8aef01cc3168d925b69b59923b1702510421d124665a438becf
 1369          Gemfile                          b16f7058b97cd74cdc3ae990ba16186106c67450d3ed80a452d641e40054d803
 2996          Gemfile.lock                     80662a5b6c97fbba7f3b5c4549b431e9fe1ac8b4b4854978ab33c0a69ef8fbd8
-2927          README.md                        345c9c9ca707accad42d7f18f17a5ab2e85cf108ecd77039e0aeae46ed7b1e3d
+2779          README.md                        b2ae2d93781726a80edecdf133962638c392dd5d06028e1d1de8bef193602278
 249           Rakefile                         2ee3dee530649056f2d72faf53794a8330554ba47d2667a394fe5dc898421beb
               app/                                                                                             
                 assets/                                                                                        
@@ -41,7 +41,7 @@ size  exec  file                               contents
                   concerns/                                                                                    
 0                   .keep                      e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 207                 webhookable.rb             5defc3657742eceaa48512c82b7f8cfa2e5a752dfe42f872bb501f552f216cf9
-460               twilio_controller.rb         166e44f075db5dd8dc9779a106696058992680e3cc32a55ca860503379908677
+495               twilio_controller.rb         d8e51cbb6451a290fbabed2ba00612bd130f74d2fb9a680d4dff4209c288c1e7
                 helpers/                                                                                       
 29                application_helper.rb        f77fac5ea412dbed92c4524fe0ed180acb2b7239f84daf758da989032301f5c8
                 mailers/                                                                                       
@@ -126,8 +126,9 @@ size  exec  file                               contents
 #### Presets
 
 ```
-dropbox  # ignore .dropbox-cache and other Dropbox-related files    
 git      # ignore .git and anything as described by .gitignore files
+dropbox  # ignore .dropbox-cache and other Dropbox-related files    
+kb       # ignore anything as described by .kbignore files          
 ```
 
 <!-- summarize version = 0.0.9 -->
