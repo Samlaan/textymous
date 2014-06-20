@@ -10,10 +10,14 @@ class TwilioController < ApplicationController
 
   def messaging
     response = Twilio::TwiML::Response.new do |r|
+      phonebook = { :a1 => "+17789076543" }
       from = params[:From]
       body = params[:Body]
       yaml = YAML.load("---\n#{body}\n---")
-      r.Sms yaml['body'], :to => yaml['to']
+      if ! phonebook.has_value?(from)
+        # give "from" an id
+      end
+      r.Sms "from: #{phonebook.key(from).to_s}\n#{yaml['body']}", :to => yaml['to']
     end
 
     render_twiml response
