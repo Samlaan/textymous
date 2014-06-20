@@ -116,6 +116,13 @@ things i should apparently cover, according to rails
 * Deployment instructions
 
 * ...
+* 
+
+
+extra info
+----------
+
+- the branch says "master" but the code says "unstable" 
 
 aw shit
 ----
