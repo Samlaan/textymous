@@ -80,6 +80,9 @@ body: "Hey dude"
 ---
 ```
 
+**June 20, 2014, 3:48 AM:** The top and bottom `---` are automatically added to the text on the Rails server.
+Users only have to text the `to:` and `from:` now :)
+
 ### side note
 right now this probably won't work because
 the number isn't paid and the ngrok url isn't static :/
