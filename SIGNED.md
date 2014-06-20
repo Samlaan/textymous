@@ -3,13 +3,13 @@
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAABAgAGBQJTo+zIAAoJEEtwXX0bMP+TwroH/iaTBpFNKe9WIqxASdZMnuT1
-GcK42yXhZyPPfdmzGi4UBBtsGZ2PkKcIK86xh1L8qm/uverTTqk14OcrtykMOnBN
-y9qpPIXkljS6zf6QFH2mGsooytT5yGzfpfyOPDVTEZ1dgy8uhaKMNZausKe/YSS0
-aBxvsOJcCSG22FYtWtpgeyP/TE++uf2EOz2RZdlWWeEoSzBmnLdaT2o8T1tYDSgV
-nDhMqzFCTAsvvlM4n6tJBhLihQwaniPoCGcjMw5nkipBbecXjCiFofX2kpbaIDsW
-xVMJRjHSOXAm6SzMdD7IewDQWNM5VAcHWUYFi6dOoiKj9lFP4Kz0iUwtqcYhyxQ=
-=iz+v
+iQEcBAABAgAGBQJTo+4QAAoJEEtwXX0bMP+Ta30IAJ8hyskez4YnqIguxHUkVlrL
+chnmDKVTXlrHKRlP0HClRreENZEyW4Ry4k2Nh932Hwv4etMeGLN7IAoe0hoi9FNn
+7f3PHgmIrEvYz/4QZegQ2qOveiPo+J4ozJ6oOPWLO7vmDiGN9WxppPkPH549Nuvm
+pUj6wGwI4kXoGHvYNMe7OVETlrv0CzXAJWlHODZETdYOZNvtdtYHej55uCLIXDOR
+idSn2V1a2c9rwGe1sHo9CmF86IWgazd/kFfqyoGbJzuOPUxHSIn5CEKvF+sY0TnF
+EwarPsLv+HhQNHqJLCcsrZqRBsa2xgJ+YiF53VDEzp6VPyxGWI6AWIpbHDCynCA=
+=oSQV
 -----END PGP SIGNATURE-----
 
 ```
@@ -26,7 +26,7 @@ size  exec  file                               contents
 466           .gitignore                       e1504e90a140f8aef01cc3168d925b69b59923b1702510421d124665a438becf
 1369          Gemfile                          b16f7058b97cd74cdc3ae990ba16186106c67450d3ed80a452d641e40054d803
 2996          Gemfile.lock                     80662a5b6c97fbba7f3b5c4549b431e9fe1ac8b4b4854978ab33c0a69ef8fbd8
-2773          README.md                        db6eeed17dc992152734e9693e4a9cf05c69e1a6ae252e6329a698249226981f
+3069          README.md                        ed1fdd2247cd40cca3a3045ba597387d2507074842b29d4fc5dd8848dfeb9d2f
 249           Rakefile                         2ee3dee530649056f2d72faf53794a8330554ba47d2667a394fe5dc898421beb
               app/                                                                                             
                 assets/                                                                                        

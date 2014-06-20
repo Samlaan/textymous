@@ -49,12 +49,6 @@ ideas, feel free to make a pull request and add it to this readme :)
 testing
 -------
 
-right now this probably won't work because
-the number isn't paid :/
-
-if you want me to verify your number (for testing purposes, obviously),
-[DM me on Twitter](https://twitter.com/nulljosh)
-
 ```bash
 $ git clone https://github.com/trommel/textymous
 $ cd textymous
@@ -67,14 +61,32 @@ $ rails s
 * start a new tab or something*
 $ ngrok 3000
 ```
-now text +1 (778) 654-1046 in YAML with two pieces of information
+
+or, if you want to test a beta script for a beta app
+
+```bash
+$ git clone https://github.com/trommel/textymous
+$ cd textymous
+$ sh run.sh # make life easier
+```
+
+now text +1 (778) 654-1046 (don't include parentheses or dashes) in YAML with
+the required two pieces of information
 
 ```yaml
 ---
-to: +1(778)-820-4128
+to: +17788204128
 body: "Hey dude"
 ---
 ```
+
+### side note
+right now this probably won't work because
+the number isn't paid and the ngrok url isn't static :/
+
+if you want me to verify your number (for testing purposes, obviously),
+[DM me on Twitter](https://twitter.com/nulljosh) and let me know if
+this works for you :D
 
 
 contributing
