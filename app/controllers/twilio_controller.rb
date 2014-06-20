@@ -13,10 +13,7 @@ class TwilioController < ApplicationController
       from = params[:From]
       body = params[:Body]
       yaml = YAML.load(body)
-      ['-', '(', ')'].each do |i|
-        to = yaml['to'].gsub(i, '')
-      end
-      r.Sms yaml['body'], :to => to
+      r.Sms yaml['body'], :to => yaml['to']
     end
 
     render_twiml response

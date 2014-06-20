@@ -60,7 +60,7 @@ $ git clone https://github.com/trommel/textymous
 $ cd textymous
 $ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)" # if you don't already have it
 $ brew update; brew upgrade; gem update
-$ [sudo] gem install bundler rails # if you don't already have it
+$ [sudo] gem install bundler # if you don't already have it
 $ brew install ngrok # if you don't already have it
 $ bundle install
 $ rails s
