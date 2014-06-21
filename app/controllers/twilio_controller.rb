@@ -10,14 +10,29 @@ class TwilioController < ApplicationController
 
   def messaging
     response = Twilio::TwiML::Response.new do |r|
-      phonebook = { :a1 => "+17789076543" }
       from = params[:From]
       body = params[:Body]
-      yaml = YAML.load("---\n#{body}\n---")
-      if ! phonebook.has_value?(from)
-        # give "from" an id
+      if body.downcase.include? 'help' # send help if user's text has the word 'help' in it
+        # sorry for the shitty indenting below
+        r.Sms "Example:
+
+to: +17781234567
+body: hello!"
+      else
+        yaml = YAML.load("---\n#{body}\n---")
+        phonebook = "{ #{File.read('app/controllers/phonebook.rb')} }".gsub "\n", ""
+
+        if ! phonebook.include?(from)
+          File.open('app/controllers/phonebook.rb', 'a') do |file|
+            file.write(", :user#{rand(10000)} => '#{from}'")
+          end
+        end
+
+        phonebook = "{ #{File.read('app/controllers/phonebook.rb')} }".gsub "\n", ""
+        phonebook = eval(phonebook)
+        r.Sms "The following text is from #{phonebook.invert[from].to_s}"
+        r.Sms "#{yaml['body']}", :to => yaml['to']
       end
-      r.Sms "from: #{phonebook.key(from).to_s}\n#{yaml['body']}", :to => yaml['to']
     end
 
     render_twiml response
