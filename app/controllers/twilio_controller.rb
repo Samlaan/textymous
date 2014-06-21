@@ -24,14 +24,17 @@ body: hello!"
 
         if ! phonebook.include?(from)
           File.open('app/controllers/phonebook.rb', 'a') do |file|
-            file.write(", :user#{rand(10000)} => '#{from}'")
+            file.write(":user#{rand(10000)} => '#{from}',")
           end
         end
 
         phonebook = "{ #{File.read('app/controllers/phonebook.rb')} }".gsub "\n", ""
         phonebook = eval(phonebook)
-        r.Sms "The following text is from #{phonebook.invert[from].to_s}"
-        r.Sms "#{yaml['body']}", :to => yaml['to']
+        r.Sms "
+
+From: #{phonebook.invert[from].to_s}
+
+#{yaml['body']}", :to => yaml['to']
       end
     end
 
