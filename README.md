@@ -16,7 +16,7 @@ i.e.:
 ```yaml
 ---
 to: +1(778)-876-3589
-body: "Hey dude, I'm white!"
+body: "Hey dude, I'm white!" # => [http://git.io/2ixiqA](http://git.io/2ixiqA)
 ---
 ```
 
