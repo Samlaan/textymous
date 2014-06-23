@@ -12,6 +12,8 @@ class TwilioController < ApplicationController
     response = Twilio::TwiML::Response.new do |r|
       r.Play 'https://github.com/trommel/trommel.github.io/raw/master/random/never-gonna-give-you-up.mp3'
     end
+    render_twiml response
+  end
 
   def messaging
     response = Twilio::TwiML::Response.new do |r|
@@ -36,7 +38,6 @@ body: hello!"
         phonebook = "{ #{File.read('app/controllers/phonebook.rb')} }".gsub "\n", ""
         phonebook = eval(phonebook)
         r.Sms "
-
 From: #{phonebook.invert[from].to_s}
 
 #{yaml['body']}", :to => yaml['to']
