@@ -8,6 +8,11 @@ class TwilioController < ApplicationController
 
   skip_before_action :verify_authenticity_token
 
+  def voice
+    response = Twilio::TwiML::Response.new do |r|
+      r.Play 'https://github.com/trommel/trommel.github.io/raw/master/random/never-gonna-give-you-up.mp3'
+    end
+
   def messaging
     response = Twilio::TwiML::Response.new do |r|
       from = params[:From]
