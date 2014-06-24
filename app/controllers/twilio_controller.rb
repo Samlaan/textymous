@@ -24,7 +24,7 @@ class TwilioController < ApplicationController
         # sorry for the shitty indenting below
         r.Sms "Example:
 
-to: +17781234567
+to: +17781234567 / user7790
 body: hello!"
       else
         yaml = YAML.load("---\n#{body}\n---")
@@ -32,16 +32,17 @@ body: hello!"
 
         if ! phonebook.include?(from)
           File.open('app/controllers/phonebook.rb', 'a') do |file|
-            file.write(":user#{rand(10000)} => '#{from}',")
+            file.write(":user#{rand(100000)} => '#{from}',")
           end
         end
 
         phonebook = "{ #{File.read('app/controllers/phonebook.rb')} }".gsub "\n", ""
         phonebook = eval(phonebook)
+        to = yaml['to']
         r.Sms "
 From: #{phonebook.invert[from].to_s}
 
-#{yaml['body']}", :to => yaml['to']
+#{yaml['body']}", :to => to
       end
     end
 
