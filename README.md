@@ -80,11 +80,11 @@ body: "Hey dude"
 ---
 ```
 
-<u>**example:**</u><br>
-![example screenshot](http://i.imgur.com/6GC4Zq7.png)
-
 **June 20, 2014, 3:48 AM:** The top and bottom `---` are automatically added to the text on the Rails server.
 Users only have to text the `to:` and `from:` now :)
+
+<u>**example:**</u><br>
+![example screenshot](http://i.imgur.com/6GC4Zq7.png)
 
 ### side note
 right now, this might not work for you because
