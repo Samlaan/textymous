@@ -84,7 +84,7 @@ body: "Hey dude"
 Users only have to text the `to:` and `from:` now :)
 
 <u>**example:**</u><br>
-![example screenshot](http://i.imgur.com/6GC4Zq7.png)
+![example screenshot](http://i.imgur.com/0cMcQze.jpg)
 
 ### side note
 right now, this might not work for you because
