@@ -93,6 +93,17 @@ this problem until i can stop using ngrok,
 which will be as soon as i have money to
 afford a VPS for hosting.
 
+"documentation"?
+----------------
+
+aside from "default" anonymous texting, textmous
+can also give you a bit of information. nothing too spectacular,
+but helpful stuff.
+
+- text 'please help' for a couple examples on how to use textymous
+- text 'who am i?' for your username
+(which is what you appear as to the people you text through textymous)
+
 
 contributing
 ------------
