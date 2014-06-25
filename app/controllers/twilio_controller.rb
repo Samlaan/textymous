@@ -39,6 +39,9 @@ body: hello!"
         phonebook = "{ #{File.read('app/controllers/phonebook.rb')} }".gsub "\n", ""
         phonebook = eval(phonebook)
         to = yaml['to']
+        if phonebook.key? to.to_sym
+          to = phonebook[to.to_sym]
+        end
         r.Sms "
 From: #{phonebook.invert[from].to_s}
 
