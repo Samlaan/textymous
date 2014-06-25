@@ -80,16 +80,18 @@ body: "Hey dude"
 ---
 ```
 
+<u>**example:**</u>
+![example screenshot](http://i.imgur.com/6GC4Zq7.png)
+
 **June 20, 2014, 3:48 AM:** The top and bottom `---` are automatically added to the text on the Rails server.
 Users only have to text the `to:` and `from:` now :)
 
 ### side note
-right now this probably won't work because
-the number isn't paid and the ngrok url isn't static :/
-
-if you want me to verify your number (for testing purposes, obviously),
-[DM me on Twitter](https://twitter.com/nulljosh) and let me know if
-this works for you :D
+right now, this might not work for you because
+the ngrok url isn't static. i can't fix
+this problem until i can stop using ngrok,
+which will be as soon as i have money to
+afford a VPS for hosting.
 
 
 contributing
@@ -119,13 +121,13 @@ things i should apparently cover, according to rails
 * Deployment instructions
 
 * ...
-* 
+*
 
 
 extra info
 ----------
 
-- the branch says "master" but the code says "unstable" 
+- the branch says "master" but the code says "unstable"
 
 aw shit
 ----
