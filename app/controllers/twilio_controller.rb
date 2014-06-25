@@ -17,6 +17,11 @@ class TwilioController < ApplicationController
   end
 
   def messaging
+    def log(text)
+      File.open('app/controllers/test.txt', 'w') do |file|
+        file.write(text)
+      end
+    end
     response = Twilio::TwiML::Response.new do |r|
       from = params[:From]
       body = params[:Body]
@@ -32,7 +37,7 @@ body: hey dude
 to: user7790
 body: hello!
 "
-      elsif body.downcase.include 'who am i?'
+      elsif body.downcase.include? 'who am i'
         yaml = YAML.load("---\n#{body}\n---")
         phonebook = "{ #{File.read('app/controllers/phonebook.rb')} }".gsub "\n", ""
 
@@ -58,11 +63,15 @@ body: hello!
         phonebook = "{ #{File.read('app/controllers/phonebook.rb')} }".gsub "\n", ""
         phonebook = eval(phonebook)
         to = yaml['to']
-        if to.include? 'user'
+
+        if to.to_s.include? 'user'
+          log phonebook[to.to_sym]
           if phonebook.key? to.to_sym
+            log phonebook[to.to_sym]
             to = phonebook[to.to_sym]
           end
         end
+
         r.Sms "
 From: #{phonebook.invert[from].to_s}
 
