@@ -138,7 +138,7 @@ things i should apparently cover, according to rails
 extra info
 ----------
 
-- the branch says "master" but the code says "unstable"
+- the difference branches are me trying to get textymous working without SQLite because if I can do that Heroku will be sufficient for hosting (for now, anyways)
 
 aw shit
 ----
