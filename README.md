@@ -16,7 +16,7 @@ i.e.:
 ```yaml
 ---
 to: +1(778)-876-3589
-body: "Hey dude, I'm white!" # => http://git.io/2ixiqA
+body: "Hey dude, I'm here!"
 ---
 ```
 
@@ -76,7 +76,7 @@ the required two pieces of information
 ```yaml
 ---
 to: +17788204128
-body: "Hey dude"
+body: "Hey dude, I'm here!"
 ---
 ```
 
