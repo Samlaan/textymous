@@ -27,7 +27,7 @@ the given user / number can now reply through the twilio number,
 i.e.:
 
 ```
-What the heck man, who are you?
+What the heck, man, who are you?
 ```
 
 the response will then be sent to the original texter
