@@ -43,7 +43,7 @@ anonymous bullying will be an immediate issue we'll have to tackle.
 i'm not sure how we'll solve this problem, as we don't want to limit
 what either user can say. in the future, once everything actually works, etc,
 we might want to add a 'report user' option, but i'm not
-too sure how this will work. if anyone has any
+too sure how this will work. If anyone has any
 ideas, feel free to make a pull request and add it to this readme :)
 
 testing
