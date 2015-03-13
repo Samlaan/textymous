@@ -18,9 +18,7 @@ class TwilioController < ApplicationController
 
   def messaging
     def log(text)
-      File.open('app/controllers/test.txt', 'w') do |file|
-        file.write(text)
-      end
+      File.open('app/controllers/test.txt', 'w') { |file| file.write(text) }
     end
     response = Twilio::TwiML::Response.new do |r|
       from = params[:From]
@@ -41,7 +39,7 @@ body: hello!
         yaml = YAML.load("---\n#{body}\n---")
         phonebook = "{ #{File.read('app/controllers/phonebook.rb')} }".gsub "\n", ""
 
-        if ! phonebook.include?(from)
+        unless phonebook.include?(from)
           File.open('app/controllers/phonebook.rb', 'a') do |file|
             file.write(":user#{rand(100000)} => '#{from}',")
           end
@@ -54,7 +52,7 @@ body: hello!
         yaml = YAML.load("---\n#{body}\n---")
         phonebook = "{ #{File.read('app/controllers/phonebook.rb')} }".gsub "\n", ""
 
-        if ! phonebook.include?(from)
+        unless phonebook.include?(from)
           File.open('app/controllers/phonebook.rb', 'a') do |file|
             file.write(":user#{rand(100000)} => '#{from}',")
           end
