@@ -50,7 +50,7 @@ testing
 -------
 
 ```bash
-$ git clone https://github.com/trommel/textymous
+$ git clone https://github.com/probablyjosh/textymous
 $ cd textymous
 $ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)" # if you don't already have it
 $ brew update; brew upgrade; gem update
@@ -65,7 +65,7 @@ $ ngrok 3000
 or, if you want to test a beta script for a beta app
 
 ```bash
-$ git clone https://github.com/trommel/textymous
+$ git clone https://github.com/probablyjosh/textymous
 $ cd textymous
 $ sh run.sh # make life easier
 ```
