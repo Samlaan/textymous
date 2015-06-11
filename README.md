@@ -1,77 +1,28 @@
-textymous
+Textymous
 ========
 
-anonymous texting, for whatever reason
+Anonymous texting, for whatever reason
 
+## Objective
+Keeping the initial "texter"'s number anonymous while still being able to text with relative ease has always been a bit of a awkward and annoying process. Even as apps like TextPlus were released there's never been a way to anonymously text numbers natively. Textymous sets out to achieve that.
 
-the idea
------
-
-using the [twilio ruby gem](https://github.com/twilio/twilio-ruby) and API,
-make an app/script that allows a user to text a twilio number with 2 pieces of
-information (probably in ~~JSON~~ YAML); a "to" and "body".
-
-i.e.:
-
-```yaml
----
-to: +1(778)-876-3589
-body: "Hey dude, I'm here!"
----
-```
-
-this will then be parsed, and the body will be texted to the given number.
-
-the given user / number can now reply through the twilio number,
-
-i.e.:
-
-```
-What the heck, man, who are you?
-```
-
-the response will then be sent to the original texter
-
-the objective of this process is to keep the initial "texter"'s number anonymous while still being able to text with relative ease.
-
-
-immediate anonymous bullying issue
-------
-
-as [zhuowei](https://twitter.com/zhuowei) mentioned [here](https://twitter.com/zhuowei/status/478777986468941825),
-anonymous bullying will be an immediate issue we'll have to tackle.
-i'm not sure how we'll solve this problem, as we don't want to limit
-what either user can say. in the future, once everything actually works, etc,
-we might want to add a 'report user' option, but i'm not
-too sure how this will work. If anyone has any
-ideas, feel free to make a pull request and add it to this readme :)
-
-testing
+Testing
 -------
 
-```bash
-$ git clone https://github.com/probablyjosh/textymous
-$ cd textymous
-$ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)" # if you don't already have it
-$ brew update; brew upgrade; gem update
-$ [sudo] gem install bundler # if you don't already have it
-$ brew install ngrok # if you don't already have it
-$ bundle install
-$ rails s
-* start a new tab or something*
-$ ngrok 3000
-```
-
-or, if you want to test a beta script for a beta app
+Textymous is still in alpha, and I haven't worked on it in quite some time. I plan on working on it more over the Summer of 2015.
 
 ```bash
-$ git clone https://github.com/probablyjosh/textymous
-$ cd textymous
-$ sh run.sh # make life easier
+git clone git@github.com:probablyjosh/textymous.git
+cd textymous
+ngrok # Install ngrok first if you don't have it
+bundle install # Install bundler first if you don't have it
+rails s
+ngrok 3000 # In a new tab (for local hosting that can be connected to Twilio)
 ```
 
-now text +1 (778) 654-1046 (don't include parentheses or dashes) in YAML with
-the required two pieces of information
+Now try texting `+17786541046` with your body (in YAML)
+
+Example syntax:
 
 ```yaml
 ---
@@ -80,68 +31,16 @@ body: "Hey dude, I'm here!"
 ---
 ```
 
-**June 20, 2014, 3:48 AM:** The top and bottom `---` are automatically added to the text on the Rails server.
-Users only have to text the `to:` and `from:` now :)
-
-<u>**example:**</u><br>
-![example screenshot](http://i.imgur.com/0cMcQze.jpg)
-
-### side note
-right now, this might not work for you because
-the ngrok url isn't static. i can't fix
-this problem until i can stop using ngrok,
-which will be as soon as i have money to
-afford a VPS for hosting.
-
-"documentation"?
+Docs
 ----------------
 
-aside from "default" anonymous texting, textmous
-can also give you a bit of information. nothing too spectacular,
-but helpful stuff.
+Textymous can also give you a bit of information if you know what you're looking for.
 
-- text 'please help' for a couple examples on how to use textymous
-- text 'who am i?' for your username
-(which is what you appear as to the people you text through textymous)
+- Text 'please help' for a couple examples on how to use textymous
+- Text 'who am I' for your username (usernames will be stored in a database for later use by other users to identify you with)
 
 
-contributing
+Contributing
 ------------
 
-<u>***pull requests pull requests pull requests pull requests pull requests
-pull requests pull requests pull requests pull requests pull requests
-pull requests pull requests pull requests***</u>
-
-things i should apparently cover, according to rails
-----------------------------------------------------
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-*
-
-
-extra info
-----------
-
-- the differ branches are me trying to get textymous working without SQLite because if I can do that Heroku will be sufficient for hosting (for now, anyways)
-
-aw shit
-----
-
-**June 16, 2014, 11:10 PST:** sorry, i screwed up the commit messages
-so i just scrapped them and started over. everything just says "Initial Commit" now.
+Feel free to make a pull request and make any additions or fixes you feel helpful or important.
