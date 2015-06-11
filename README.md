@@ -15,7 +15,7 @@ For testing you'll need ngrok, bundler, and rails.
 
 ```bash
 brew install ngrok # OS X (For Linux distros use appropriate package manager (apt-get, yum, pacman, etc))
-gem install rails
+gem install bundler rails
 ```
 Then clone the project and get it running.
 
