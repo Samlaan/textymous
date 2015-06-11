@@ -1,7 +1,7 @@
 Textymous
 ========
 
-Anonymous texting, for whatever reason
+Anonymous texting, for whatever reason.
 
 ## Objective
 Keeping the initial "texter"'s number anonymous while still being able to text with relative ease has always been a bit of a awkward and annoying process. Even as apps like TextPlus were released there's never been a way to anonymously text numbers natively. Textymous sets out to achieve that.
@@ -11,11 +11,19 @@ Testing
 
 Textymous is still in alpha, and I haven't worked on it in quite some time. I plan on working on it more over the Summer of 2015.
 
+For testing you'll need ngrok, bundler, and rails.
+
+```bash
+brew install ngrok # OS X (For Linux distros use appropriate package manager (apt-get, yum, pacman, etc))
+gem install rails
+```
+Then clone the project and get it running.
+
 ```bash
 git clone git@github.com:probablyjosh/textymous.git
 cd textymous
-ngrok # Install ngrok first if you don't have it
-bundle install # Install bundler first if you don't have it
+ngrok
+bundle install
 rails s
 ngrok 3000 # In a new tab (for local hosting that can be connected to Twilio)
 ```
