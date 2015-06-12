@@ -1,4 +1,4 @@
-Textymous
+textymous
 ========
 
 Anonymous texting, for whatever reason.
