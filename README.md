@@ -13,7 +13,7 @@ Testing
 
 Textymous is still in alpha, and I haven't worked on it in quite some time. I plan on working on it more over the Summer of 2015.
 
-For testing you'll need [ngrok](https://github.com/inconshreveable/ngrok), [bundler](http://bundler.io), and [http://rubyonrails.org].
+For testing you'll need [ngrok](https://github.com/inconshreveable/ngrok), [bundler](http://bundler.io), and [Rails][http://rubyonrails.org].
 
 ```bash
 brew install ngrok # OS X (For Linux distros use appropriate package manager (apt-get, yum, pacman, etc))
