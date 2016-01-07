@@ -1,7 +1,7 @@
 textymous
 ========
 
-Anonymous texting, for whatever reason.
+Cross-platform Anonymous SMS, done right.
 
 ## Objective
 Keeping the initial "texter"'s number anonymous while still being able to text with relative ease has always been a bit of a awkward and annoying process. Even as apps like TextPlus were released there's never been a way to anonymously text numbers natively. Textymous sets out to achieve that.
